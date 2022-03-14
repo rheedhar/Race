@@ -36,7 +36,7 @@ def race(all_turtles, current_state):
             if turtle.xcor() > 230:
                 current_state = False
                 if turtle.pencolor() == user_guess:
-                    print(f"Congratulations! You won the game. The winning color is {turtle.pencolor}")
+                    print(f"Congratulations! You won the game. The winning color is {turtle.pencolor()}")
                 else:
                     print(f"You lost the game :(. The winning color is {turtle.pencolor()}")
             turtle.forward(random.randint(0, 10))
